@@ -1,3 +1,4 @@
+# Images in Julia
 using Images
 
 url = "https://images.unsplash.com/photo-1634034464593-5b252db180b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80"
@@ -47,3 +48,27 @@ color = RGB(0.1, 0.5, 0.2)
 [color, redify(color)]
 
 redify.(philip)
+
+# Arrays
+element = 1
+fill(element, 3, 4)
+
+keeptrack = [ typeof(1), typeof(1.0)]
+
+v = [1,2,3,4]
+
+
+w = [ 1 2 3
+      4 5 6]
+size(w)
+w[:,1]
+
+A1 = rand(1:9, 3, 4)
+
+A2 = string.(rand("🥱😴🤤😵🤐🥴🤢🤮🤧😷🤒🤕🤑🤠😈👿", 3, 4))
+
+
+colors = distinguishable_colors(5)
+A3 = rand(colors, 10, 10)
+
+D = [ i * j for i = 1:5,j = 1:5]
